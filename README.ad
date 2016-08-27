@@ -1,0 +1,22 @@
+maskstringnizer.py
+Generates C functions from header file bitmask macro definition,
+which help printing given integer flag in human-readable string.
+#
+stringnize: 
+Converts the integer to its corresponding symbol.
+flags2str:
+Returns all bitmask symbols contained in the integer.
+#
+usage:
+In stead of writing boiler plate code like
+if (flags & FILE_ATTRIBUTE_READONLY)
+    printf("read-only");
+#
+You can
+$ maskstringnizer.py < winnt.h FILE_ATTRIBUTE_ > debug.c
+and
+printf(flags2str(flags));
+#
+Copyright (c) 2016 Kanda.Motohiro@gmail.com
+Licensed under the Apache License, Version 2.0
+
