@@ -3,7 +3,7 @@
 # Generates C functions from header file bitmask macro definition,
 # which help printing given integer flag in human-readable string.
 #
-# stringnize: 
+# stringnize:
 # Converts the integer to its corresponding symbol.
 # flags2str:
 # Returns all bitmask symbols contained in the integer.
